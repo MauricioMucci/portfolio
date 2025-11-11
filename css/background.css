@@ -1,0 +1,94 @@
+.background .subtitle {
+  color: #e0e0e0;
+}
+
+.background p {
+  margin-bottom: 1rem;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+.company::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.25rem;
+  height: 1rem;
+  background: linear-gradient(#b6f829, #67dd0a);
+  top: 1rem;
+  left: -0.25rem;
+}
+
+.company-title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.company-year {
+  position: absolute;
+  top: 1rem;
+  left: -6rem;
+  color: #525252;
+  font-size: 0.875rem;
+  text-align: right;
+  width: 5rem;
+}
+
+.company-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.company-skils {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  align-content: start;
+}
+
+.company-skils li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 0.25rem;
+  background: #fff;
+  padding: 0.25rem 0.5rem;
+}
+
+@media (width <= 800px) {
+  .background {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .background .subtitle {
+    color: #141414;
+  }
+  .background-text {
+    font-size: 1.25rem;
+  }
+  .company-year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .company-year::before {
+    content: "Year: ";
+  }
+}
+
+@media (width <= 400px) {
+  .company {
+    grid-template-columns: 1fr;
+  }
+}
