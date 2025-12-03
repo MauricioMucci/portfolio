@@ -58,6 +58,34 @@ a:visited {
   max-width: 5ch;
 }
 
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+#back-to-top:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 2px;
+}
+
 @media (width <= 800px) {
   .subtitle {
     font-size: 3rem;
