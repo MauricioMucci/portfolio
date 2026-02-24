@@ -8,7 +8,7 @@ I am a Software Engineer with 3 years of experience in software development and 
 
 ## 🚀 How to Use
 
-To view the portfolio, you can simply open [Portfolio of Maurício Mucci, Full Stack Developer](https://mauriciomucci.github.io/portfolio/)
+To view the portfolio, you can open [Portfolio of Maurício Mucci, Full Stack Developer](https://mauriciomucci.github.io/portfolio/)
 
 ## 📫 Contact
 
