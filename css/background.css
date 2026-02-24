@@ -50,14 +50,14 @@
   color: #525252;
 }
 
-.company-skils {
+.company-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 0.625rem;
   align-content: start;
 }
 
-.company-skils li {
+.company-skills li {
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 0.25rem;
