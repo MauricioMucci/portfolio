@@ -10,6 +10,13 @@ function scrollToTop(event) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+const backToTopButton = document.querySelector("#back-to-top");
+if (backToTopButton) {
+  window.addEventListener("scroll", () => {
+    backToTopButton.classList.toggle("hide", window.scrollY <= 150);
+  });
+}
+
 const backgroundLink = document.querySelector("#background-link");
 if (backgroundLink) {
   backgroundLink.addEventListener("click", scroll);
